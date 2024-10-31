@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2; /* Changed to a cooler blue */
+            --secondary-color: #F5F5F5; /* Light gray for backgrounds */
+            --accent-color: #FF5733; /* Bright accent color */
+            --dark-gray: #333333; /* Dark gray for text */
+            --muted-gray: #828282; /* Muted gray for less emphasis */
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .resume-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            background: var(--secondary-color);
+        }
+
+        aside {
+            width: 30%;
+            background: var(--secondary-color);
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        main {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            display: cover;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: var(--accent-color);
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            color: var(--dark-gray);
+        }
+
+        h3 {
+            margin: 20px 0 10px;
+            color: var(--primary-color);
+        }
+
+        h4 {
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
+
+        p, small {
+            color: var(--muted-gray);
+            margin: 5px 0;
+        }
+
+        .line-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin: 15px 0;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .read {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .flex-group {
+            display: flex;
+            margin: 15px 0;
+        }
+
+        .short {
+            width: 30%;
+            padding-right: 15px;
+        }
+
+        .full {
+            width: 70%;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 8px 12px;
+            border: 1px solid var(--muted-gray);
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--dark-gray);
+        }
+
+        hr {
+            border: 1px solid var(--muted-gray);
+            margin: 10px 0;
+        }
+
+        @media print {
+            nav {
+                display: none;
+            }
+        }
+
+        .skill-list {
+            padding: 0;
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            color: var(--muted-gray);
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <aside>
+            <section class="text-center">
+                <img class="profile-pic" src="me.JPG" alt="Profile Picture">
+                <h2>Muhammad Ahsan</h2>
+                <small>UI / UX DESIGNER / DEVELOPER</small>
+                <p><b>Phone:</b> +92 300 1042647 </p>
+                <p><b>Email:</b> mahsan7861100@gmail.com</p>
+            </section>
+            <section>
+                <h3 class="line-title">About Me</h3>
+                <p class="read">Computers have been my passion forever. I could spend hours learning about coding and designing. This passion truly took off when I began my career as a UI/UX designer and developer.</p>
+            </section>
+            <section>
+                <h3 class="line-title">Skills</h3>
+                <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>Tailwind</li>
+                    <li>Bootstrap</li>
+                    <li>Materialize</li>
+                    <li>WordPress</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Understanding of PHP, MySQL, Gulp</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="line-title">Education</h3>
+                <p class="read"><b>Matric:</b>JPPHS KKOT</p>
+                <p class="read"><b>FSC:</b>JPPHS KKOT</p>
+                <p class="read"><b>University:</b> CUI</p>
+            </section>
+        </aside>
+        <main>
+            <section>
+                <h3 class="line-title">Objective</h3>
+                <p class="read">I aim to leverage my design skills to benefit my company, enhancing my career and contributing to its success.</p>
+            </section>
+            <section>
+                <h3 class="line-title">Experience <small>(3 years)</small></h3>
+                <article class="flex-group">
+                    <div class="short">
+                        <h4>Edunuts.com</h4>
+                        <p>Naurang House, 21 KG Marg Connaught Place, New Delhi -110001</p>
+                        <small>1-1-2015 to 4-11-2017</small>
+                    </div>
+                    <div class="full">
+                        <a href="http://edunuts.com">Lead UI/UX Developer</a>
+                        <p class="read">I handled UI development and design for the entire website using HTML5, CSS3, jQuery, and more, ensuring a user-friendly experience.</p>
+                    </div>
+                </article>
+                <article class="flex-group">
+                    <div class="short">
+                        <h4>bigly.io</h4>
+                        <p>Bigly Technologies Pvt. Ltd.<br>N-21, Sec. 18, Noida, Uttar Pradesh: 201301</p>
+                        <small>November 2017 - Present</small>
+                    </div>
+                    <div class="full">
+                        <a href="http://bigly.io">Lead UI/UX Developer</a>
+                        <p class="read">Worked on E-Commerce Seller Services and Dropshipping platforms, applying my design skills to enhance user experience.</p>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <h3 class="line-title">Projects Completed</h3>
+                <article class="flex-group">
+                    <div class="short">
+                        <h4><a href="">Edunuts.com</a></h4>
+                        <p>UI/Designer & Developer</p>
+                    </div>
+                    <div class="full">
+                        <p class="read">A platform empowering students to make informed career decisions based on data insights.</p>
+                    </div>
+                </article>
+                <article class="flex-group">
+                    <div class="short">
+                        <h4><a href="">bigly.io</a></h4>
+                        <p>UI/Designer & Developer</p>
+                    </div>
+                    <div class="full">
+                        <p class="read">India's first platform for importing products to online stores without inventory.</p>
+                    </div>
+                </article>
+                <!-- Additional projects can be added here -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>
